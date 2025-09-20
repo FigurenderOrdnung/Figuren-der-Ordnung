@@ -1,5 +1,4 @@
-<a class="button" href="https://figurenderordnung.substack.com" target="_blank">
-    <img src="icons/substack.svg" alt="Substack" style="width:18px;vertical-align:middle;margin-right:6px;">
-    Substack
-  </a>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor">
+  <path d="M0 32v64h448V32H0zm0 128v64h448v-64H0zm0 128v192l224-96 224 96V288H0z"/>
+</svg>
 
