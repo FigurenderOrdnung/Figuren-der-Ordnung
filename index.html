@@ -12,9 +12,10 @@
       color: #222;
       padding: 40px 20px;
       line-height: 1.6;
+      text-align: center;
     }
     h1 {
-      font-size: 1.8em;
+      font-size: 2em;
       margin-bottom: 0.2em;
     }
     h2 {
@@ -24,25 +25,33 @@
       margin-bottom: 1.5em;
       color: #555;
     }
-    .two-columns {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 3em;
-      justify-content: center;
+    .lang-switch {
+      margin-bottom: 2em;
     }
-    .col {
-      flex: 1;
-      max-width: 450px;
-      min-width: 300px;
+    .lang-switch button {
+      border: 1px solid #000;
+      background: #fff;
+      padding: 6px 14px;
+      margin: 0 5px;
+      cursor: pointer;
+      font-size: 1em;
+      transition: all 0.2s ease;
+    }
+    .lang-switch button.active {
+      background: #000;
+      color: #fff;
     }
     .description {
+      max-width: 700px;
+      margin: 0 auto 2em auto;
       font-size: 1.05em;
-      margin-bottom: 2em;
     }
     .links {
       display: flex;
       flex-direction: column;
       gap: 0.8em;
+      align-items: center;
+      margin-bottom: 2em;
     }
     a.button {
       font-size: 1.05em;
@@ -68,63 +77,76 @@
       margin-top: 3em;
       font-size: 0.9em;
       color: #555;
-      text-align: center;
     }
   </style>
 </head>
 <body>
-  <div class="two-columns">
-    <!-- Deutsche Spalte -->
-    <div class="col">
-      <h1>Figuren der Ordnung</h1>
-      <h2>Eine Zeitschrift für Theorie, Zeichen, Systeme</h2>
+  <!-- Sprachschalter -->
+  <div class="lang-switch">
+    <button id="btn-de" class="active" onclick="showLang('de')">DE</button>
+    <button id="btn-en" onclick="showLang('en')">EN</button>
+  </div>
 
-      <div class="description">
-        <p><strong>Figuren der Ordnung</strong> erscheint in unregelmäßiger Folge, unter wechselnden Namen und Perspektiven.</p>
-        <p>Ihre Beiträge versammeln sich um Formen der Beschreibung, Umordnung und Erfindung von Welt. Ziel ist Gegenwärtigkeit – ein Gegenentwurf zur meinungsbasierten Form des Textens.</p>
-        <p>Veröffentlicht werden Essays, Portraits, Fragmenttexte, Archivalien, Zeichensysteme und sprachliche Interventionen. Die Herausgeberschaft ist anonym oder pseudonym – eine Phantomschrift, die sich bewusst der Autorenschaft verweigert.</p>
-      </div>
+  <!-- Deutsch -->
+  <div id="lang-de">
+    <h1>Figuren der Ordnung</h1>
+    <h2>Eine Zeitschrift für Theorie, Zeichen, Systeme</h2>
 
-      <div class="links">
-        <a class="button" href="Figuren der Ordnung_Heft1.pdf" target="_blank">📖 Heft 1 (PDF)</a>
-        <a class="button" href="heft2.html">👻 Heft 2: GHOSTS öffnen</a>
-        <a class="button" href="https://figurenderordnung.substack.com" target="_blank">
-          <img src="icons/substack.svg" alt="Substack"> Substack
-        </a>
-        <a class="button" href="https://instagram.com/figurenderordnung" target="_blank">
-          <img src="icons/instagram.svg" alt="Instagram"> Instagram
-        </a>
-      </div>
+    <div class="description">
+      <p><strong>Figuren der Ordnung</strong> erscheint in unregelmäßiger Folge, unter wechselnden Namen und Perspektiven.</p>
+      <p>Ihre Beiträge versammeln sich um Formen der Beschreibung, Umordnung und Erfindung von Welt. Ziel ist Gegenwärtigkeit – ein Gegenentwurf zur meinungsbasierten Form des Textens.</p>
+      <p>Veröffentlicht werden Essays, Portraits, Fragmenttexte, Archivalien, Zeichensysteme und sprachliche Interventionen. Die Herausgeberschaft ist anonym oder pseudonym – eine Phantomschrift, die sich bewusst der Autorenschaft verweigert.</p>
     </div>
 
-    <!-- Englische Spalte -->
-    <div class="col">
-      <h1>Figures of Order</h1>
-      <h2>A journal for theory, signs, systems</h2>
+    <div class="links">
+      <a class="button" href="Figuren der Ordnung_Heft1.pdf" target="_blank">📖 Heft 1 lesen (PDF)</a>
+      <a class="button" href="heft2.html">👻 Heft 2: GHOSTS öffnen</a>
+      <a class="button" href="https://figurenderordnung.substack.com" target="_blank">
+        <img src="icons/substack.svg" alt="Substack"> Substack
+      </a>
+      <a class="button" href="https://instagram.com/figurenderordnung" target="_blank">
+        <img src="icons/instagram.svg" alt="Instagram"> Instagram
+      </a>
+    </div>
+  </div>
 
-      <div class="description">
-        <p><strong>Figures of Order</strong> appears in irregular sequence, under shifting names and perspectives.</p>
-        <p>Its contributions circle around forms of description, reordering and invention of worlds. The aim is presence – a counter-concept to the opinion-based form of writing.</p>
-        <p>We publish essays, portraits, fragmentary texts, archival material, sign systems and linguistic interventions. The editorial voice is anonymous or pseudonymous – a phantom script that deliberately resists authorship.</p>
-      </div>
+  <!-- Englisch -->
+  <div id="lang-en" style="display:none;">
+    <h1>Figures of Order</h1>
+    <h2>A journal for theory, signs, systems</h2>
 
-      <div class="links">
-        <a class="button" href="Figures of Order_Issue 1.pdf" target="_blank">
-          <img src="icons/globe.svg" alt="English"> Read Issue 1 (PDF)
-        </a>
-        <a class="button" href="heft2.html">👻 Issue 2: GHOSTS</a>
-        <a class="button" href="https://figurenderordnung.substack.com" target="_blank">
-          <img src="icons/substack.svg" alt="Substack"> Substack
-        </a>
-        <a class="button" href="https://instagram.com/figurenderordnung" target="_blank">
-          <img src="icons/instagram.svg" alt="Instagram"> Instagram
-        </a>
-      </div>
+    <div class="description">
+      <p><strong>Figures of Order</strong> appears in irregular sequence, under shifting names and perspectives.</p>
+      <p>Its contributions circle around forms of description, reordering and invention of worlds. The aim is presence – a counter-concept to the opinion-based form of writing.</p>
+      <p>We publish essays, portraits, fragmentary texts, archival material, sign systems and linguistic interventions. The editorial voice is anonymous or pseudonymous – a phantom script that deliberately resists authorship.</p>
+    </div>
+
+    <div class="links">
+      <a class="button" href="Figures of Order_Issue 1.pdf" target="_blank">
+        <img src="icons/globe.svg" alt="English"> Read Issue 1 (PDF)
+      </a>
+      <a class="button" href="heft2.html">👻 Issue 2: GHOSTS</a>
+      <a class="button" href="https://figurenderordnung.substack.com" target="_blank">
+        <img src="icons/substack.svg" alt="Substack"> Substack
+      </a>
+      <a class="button" href="https://instagram.com/figurenderordnung" target="_blank">
+        <img src="icons/instagram.svg" alt="Instagram"> Instagram
+      </a>
     </div>
   </div>
 
   <div class="footer">
     Kontakt: <a href="mailto:HHollJMiller@proton.me">HHollJMiller@proton.me</a>
   </div>
+
+  <script>
+    function showLang(lang) {
+      document.getElementById('lang-de').style.display = (lang === 'de') ? 'block' : 'none';
+      document.getElementById('lang-en').style.display = (lang === 'en') ? 'block' : 'none';
+
+      document.getElementById('btn-de').classList.toggle('active', lang === 'de');
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    }
+  </script>
 </body>
 </html>
