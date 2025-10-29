@@ -143,13 +143,31 @@
     Kontakt: <a href="mailto:HHollJMiller@proton.me">HHollJMiller@proton.me</a>
   </div>
 
-  <script>
-    function showLang(lang) {
-      document.getElementById('lang-de').style.display = (lang === 'de') ? 'block' : 'none';
-      document.getElementById('lang-en').style.display = (lang === 'en') ? 'block' : 'none';
-      document.getElementById('btn-de').classList.toggle('active', lang === 'de');
-      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+ <script>
+  (function () {
+    const de = document.getElementById('lang-de');
+    const en = document.getElementById('lang-en');
+    const btnDe = document.getElementById('btn-de');
+    const btnEn = document.getElementById('btn-en');
+
+    function show(lang) {
+      const isDe = (lang === 'de');
+      de.style.display = isDe ? 'block' : 'none';
+      en.style.display = isDe ? 'none' : 'block';
+      btnDe.classList.toggle('active', isDe);
+      btnEn.classList.toggle('active', !isDe);
+      try { localStorage.setItem('fdo_lang', lang); } catch(e){}
     }
-  </script>
+
+    btnDe.addEventListener('click', () => show('de'));
+    btnEn.addEventListener('click', () => show('en'));
+
+    const remembered = (function(){ try { return localStorage.getItem('fdo_lang'); } catch(e){ return null; } })();
+    const hash = (location.hash || '').replace('#','').toLowerCase();
+    const initial = (hash === 'en' || remembered === 'en') ? 'en' : 'de';
+    show(initial);
+  })();
+</script>
+
 </body>
 </html>
