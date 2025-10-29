@@ -2,64 +2,110 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Heft 2 – Zugang</title>
+  <title>Figuren der Ordnung – Heft 2 / GHOSTS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Figuren der Ordnung – Heft 2 (GHOSTS): Essays über Geister, Schrift und symbolische Ordnung.">
+  <meta property="og:image" content="assets/cover_ghosts.jpg">
   <style>
-    body { 
-      font-family: Georgia, serif; 
-      padding: 2rem; 
-      background: #fff; 
-      color: #222; 
+    body {
+      font-family: Georgia, serif;
+      background-color: #fff;
+      color: #222;
+      padding: 40px 20px;
       line-height: 1.6;
+      text-align: center;
     }
-    .hidden { display: none; }
-    input { padding: 0.5rem; font-size: 1rem; }
-    button { padding: 0.5rem 1rem; margin-left: 0.5rem; }
-    a.pdf-link {
-      display: inline-block;
-      margin-top: 1rem;
-      font-weight: bold;
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0.3em;
+    }
+    h2 {
+      font-style: italic;
+      font-weight: normal;
+      color: #555;
+      margin-bottom: 1.5em;
+    }
+    img.cover {
+      width: 280px;
+      max-width: 80%;
+      margin: 1.5em auto;
+      display: block;
+      border: 1px solid #ddd;
+    }
+    .abstract {
+      max-width: 750px;
+      margin: 0 auto 2em auto;
+      font-size: 1.05em;
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8em;
+      align-items: center;
+      margin-bottom: 3em;
+    }
+    a.button {
+      font-size: 1.05em;
       text-decoration: none;
-      color: #004080;
+      color: #000;
+      border: 1px solid #000;
+      padding: 8px 14px;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      width: fit-content;
     }
-    a.pdf-link:hover {
-      text-decoration: underline;
+    a.button:hover {
+      background-color: #000;
+      color: #fff;
     }
-    iframe {
-      border: 1px solid #ccc;
-      margin-top: 1rem;
+    a.button img {
+      width: 18px;
+      height: 18px;
+    }
+    blockquote {
+      font-style: italic;
+      color: #444;
+      max-width: 650px;
+      margin: 1.5em auto;
+      line-height: 1.5;
+    }
+    footer {
+      margin-top: 3em;
+      font-size: 0.9em;
+      color: #555;
     }
   </style>
 </head>
 <body>
-  <h1>Heft 2 – GHOSTS</h1>
-  <div id="login">
-    <p>Bitte Passwort eingeben:</p>
-    <input type="password" id="pw" />
-    <button onclick="check()">OK</button>
-    <p id="fail" style="color: red;"></p>
+  <h1>Heft 2 / Issue 2 – GHOSTS</h1>
+  <h2>On the Spectral Logic of Modern Order</h2>
+
+  <img src="assets/cover_ghosts.jpg" alt="Cover Heft 2 – GHOSTS" class="cover">
+
+  <div class="abstract">
+    <p><strong>GHOSTS</strong> widmet sich den Gespenstern der Gegenwart – den medialen, politischen und spirituellen Figuren, in denen Macht und Erinnerung weiterleben.</p>
+    <p>Zwischen Philosophie, Kunst und Systemtheorie verhandeln die Beiträge dieses Hefts die Schrift als Erscheinungsform des Unsichtbaren: 
+      von Alexandra Christous Nachbildern über die „Geisterkriege“ der Medien bis zu Kant Machine, der transzendentalen Apparatur des Denkens.</p>
   </div>
 
-  <div id="content" class="hidden">
-    <p><em>Heft 2 · Ghosts · Lesefassung (nicht öffentlich)</em></p>
-    <iframe src="Ghosts_preview.pdf" width="100%" height="600px"></iframe>
-    <p>
-      <a href="Ghosts_preview.pdf" target="_blank" class="pdf-link">
-        📖 PDF in neuem Fenster öffnen
-      </a>
-    </p>
+  <blockquote>„Schrift als Ritual. Jeder Satz ein Echo aus anderen Händen.“</blockquote>
+
+  <div class="links">
+    <a class="button" href="pdf/FdO_Heft2_Ghosts.pdf" target="_blank">📖 Heft 2 / GHOSTS lesen (PDF)</a>
+    <a class="button" href="https://figurenderordnung.substack.com/p/ghosts" target="_blank">
+      <img src="icons/substack.svg" alt="Substack"> Substack (Online-Texte)
+    </a>
+    <a class="button" href="https://instagram.com/figurenderordnung" target="_blank">
+      <img src="icons/instagram.svg" alt="Instagram"> Instagram (Ghosts-Serie)
+    </a>
+    <a class="button" href="index.html">← Zurück zur Startseite</a>
   </div>
 
-  <script>
-    function check() {
-      const correct = "ghosts2025";
-      const input = document.getElementById("pw").value;
-      if (input === correct) {
-        document.getElementById("login").classList.add("hidden");
-        document.getElementById("content").classList.remove("hidden");
-      } else {
-        document.getElementById("fail").textContent = "Falsches Passwort.";
-      }
-    }
-  </script>
+  <footer>
+    © 2025 Figuren der Ordnung · Hans Holl & Jürgen Miller<br>
+    Kontakt: <a href="mailto:HHollJMiller@proton.me">HHollJMiller@proton.me</a>
+  </footer>
 </body>
 </html>
