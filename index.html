@@ -2,9 +2,9 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Figuren der Ordnung · Zeitschrift für Theorie, Zeichen, Systeme</title>
+  <title>Figuren der Ordnung · Online Edition</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Figuren der Ordnung – Zeitschrift für Theorie, Zeichen und Systeme. Heft I · Heft II – Ghosts · Heft III – Softpower.">
+  <meta name="description" content="Figuren der Ordnung – Eine Zeitschrift für Theorie, Zeichen und Systeme.">
 
   <style>
     body {
@@ -16,137 +16,116 @@
       line-height: 1.6;
     }
 
-    /* === NAVIGATION === */
     nav.topnav {
       text-align: center;
-      padding: 20px 0;
+      padding: 18px 0;
       font-size: 1.05em;
       border-bottom: 1px solid #ccc;
       letter-spacing: 0.4px;
     }
-
     nav.topnav a {
       color: black;
       text-decoration: none;
       padding: 0 14px;
     }
-
     nav.topnav a:hover {
       text-decoration: underline;
     }
 
-    /* === SPRACHSCHALTER === */
-    .lang-switch {
-      text-align: right;
-      padding: 12px 20px 0 0;
-      font-size: 0.9em;
+    header.hero {
+      width: 100%;
+      padding: 160px 20px;
+      color: white;
+      text-align: center;
+      background-image:
+        linear-gradient(rgba(30,30,30,0.55), rgba(20,20,20,0.75)),
+        url('assets/Guanyin.jpeg');
+      background-size: cover;
+      background-position: center;
+      text-shadow: 0 0 12px rgba(0,0,0,0.6);
     }
-    .lang-switch a {
-      color: black;
-      text-decoration: none;
-    }
-    .lang-switch a:hover {
-      text-decoration: underline;
-    }
-
-    /* === CONTENT === */
-    .container {
-      max-width: 780px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-
-    h1 {
-      font-size: 2.2em;
+    header.hero h1 {
+      font-size: 52px;
+      margin: 0;
       font-weight: normal;
-      margin-bottom: 8px;
+      letter-spacing: 1px;
+    }
+    header.hero h2 {
+      font-size: 24px;
+      margin-top: 14px;
+      font-style: italic;
+      opacity: 0.9;
+    }
+
+    section {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 40px 20px;
     }
 
     h2 {
-      font-size: 1.35em;
-      font-weight: normal;
-      color: #444;
-      margin-top: 5px;
-    }
-
-    .hefte {
-      margin-top: 40px;
-      font-size: 1.1em;
-    }
-
-    .hefte a {
-      color: black;
-      text-decoration: none;
-    }
-
-    .hefte a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      margin: 60px 0 40px;
       text-align: center;
-      font-size: 0.85em;
-      color: #666;
+      margin-bottom: 0.4em;
     }
 
-    footer a {
-      color: #333;
+    .links {
+      text-align: center;
+      margin-top: 20px;
+    }
+    a.button {
+      display: inline-block;
+      margin: 6px;
+      padding: 8px 14px;
+      color: black;
+      border: 1px solid black;
       text-decoration: none;
+      transition: 0.25s;
+    }
+    a.button:hover {
+      background: black;
+      color: white;
     }
 
-    footer a:hover {
-      text-decoration: underline;
+    .footer {
+      text-align: center;
+      margin: 60px 0 40px;
+      font-size: 0.9em;
+      color: #666;
     }
   </style>
 </head>
 
 <body>
 
-  <!-- SPRACHSCHALTER -->
-  <div class="lang-switch">
-    <strong>Sprache:</strong> 
-    <a href="index.html">DE</a> · 
-    <a href="index_en.html">EN</a>
-  </div>
+<nav class="topnav">
+  <a href="Figuren_der_Ordnung_Heft1.pdf">Heft I</a> ·
+  <a href="FdO_Heft2_Ghosts.pdf">Heft II – GHOSTS</a> ·
+  <a href="heft3.html"><strong>Heft III – Softpower</strong></a>
+</nav>
 
-  <!-- NAVIGATION -->
-  <nav class="topnav">
-    <a href="issue1.html">Heft I</a> ·
-    <a href="issue2.html">Heft II – Ghosts</a> ·
-    <a href="issue3.html">Heft III – Softpower</a>
-  </nav>
+<header class="hero">
+  <h1>Figuren der Ordnung</h1>
+  <h2>Theorie · Zeichen · Systeme</h2>
+</header>
 
-  <!-- CONTENT -->
-  <div class="container">
-    <h1>Figuren der Ordnung</h1>
-    <h2>Theorie · Zeichen · Systeme</h2>
+<section>
+  <p><strong>Figuren der Ordnung</strong> erscheint in unregelmäßiger Folge und versammelt Essays, Portraits,
+     systemische Analysen, literarische Experimente und Archivmaterial. Die Herausgeberschaft operiert bewusst
+     anonym oder pseudonym — eine Phantomschrift, die Denkprozesse freilegt statt Autorpositionen.</p>
+</section>
 
-    <p>
-      <em>Figuren der Ordnung</em> ist ein unabhängiges Theorieprojekt über Machtformen,
-      mediale Wirklichkeiten und kulturelle Semantiken der Gegenwart.
-      Die Zeitschrift erscheint in freier Folge und untersucht die Linien,
-      entlang derer sich politische, soziale und ästhetische Ordnungen formen –
-      und auflösen.
-    </p>
+<section class="links">
+  <a class="button" href="Figuren_der_Ordnung_Heft1.pdf" target="_blank">📘 Heft I (PDF)</a>
+  <a class="button" href="FdO_Heft2_Ghosts.pdf" target="_blank">👻 Heft II – GHOSTS (PDF)</a>
+  <a class="button" href="heft3.html">📗 Heft III – Softpower (Preview)</a>
+</section>
 
-    <div class="hefte">
-      <p><a href="Figure_of_Order_issue1.html">→ Heft I – Kreuzungen</a><br>
-      Konfliktlinien zwischen Staatlichkeit, Zeichenökonomien und literarischen Weltmodellen.</p>
-
-      <p><a href="issue2.html">→ Heft II – GHOSTS</a><br>
-      Medien, Speicher, Spektren: Wie Gegenwart aus Spuren und Phantomschriften entsteht.</p>
-
-      <p><a href="issue3.html">→ Heft III – Softpower</a><br>
-      Die stillen, symbolischen und infrastrukturellen Verschiebungen globaler Macht.</p>
-    </div>
-  </div>
-
-  <footer>
-    Kontakt: <a href="mailto:HHollJMiller@proton.me">HHollJMiller@proton.me</a><br>
-    <a href="impressum.html">Impressum / License</a>
-  </footer>
+<div class="footer">
+  Kontakt: <a href="mailto:HHollJMiller@proton.me">HHollJMiller@proton.me</a><br>
+  <a href="impressum.html">Impressum / License</a>
+</div>
 
 </body>
 </html>
+
 
