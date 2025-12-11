@@ -1,131 +1,735 @@
 <!DOCTYPE html>
+
+
 <html lang="de">
+
+
+
+
+
+<!-- Privacy-friendly analytics by Plausible -->
+
+
+<script async src="https://plausible.io/js/pa-fKsNcNRHB95MFrkHFWbTg.js"></script>
+
+
+<script>
+
+
+  window.plausible = window.plausible || function () { (plausible.q = plausible.q || []).push(arguments) },
+
+
+  plausible.init = plausible.init || function (i) { plausible.o = i || {} };
+
+
+  plausible.init()
+
+
+</script>
+
+
+
+
 <head>
+
   <meta charset="UTF-8">
+
+
+  <title>Figuren der Ordnung · Figures of Order</title>
+
+
   <title>Figuren der Ordnung · Online Edition</title>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <meta name="robots" content="index, follow">
+
+
+  <meta name="description" content="Figuren der Ordnung – A journal on signs, systems, softpower and spectral politics.">
+
+
+  <meta property="og:image" content="assets/Guanyin_big.jpg">
+
+
   <meta name="description" content="Figuren der Ordnung – Eine Zeitschrift für Theorie, Zeichen und Systeme.">
 
+
+
   <style>
+
     body {
+
       font-family: Georgia, serif;
-      margin: 0;
-      padding: 0;
-      background: #ffffff;
+
+
+      background-color: #ffffff;
+
+
       color: #222;
+
+      margin: 0;
+
+      padding: 0;
+
+
+      background: #ffffff;
+
+
+      color: #222;
+
       line-height: 1.6;
+
+
     }
+
+
+
+
+
+    /* === Navigation (DE/EN, horizontal) === */
+
 
     nav.topnav {
+
       text-align: center;
+
+
       padding: 18px 0;
+
+
       font-size: 1.05em;
+
+
       border-bottom: 1px solid #ccc;
+
+
       letter-spacing: 0.4px;
+
     }
+
+
+
+
     nav.topnav a {
+
+
       color: black;
+
+
       text-decoration: none;
+
+
       padding: 0 14px;
+
+
     }
+
+
+
+
+
     nav.topnav a:hover {
+
+
       text-decoration: underline;
+
+
     }
+
+
+
+
+
+    /* === Hero === */
 
     header.hero {
+
       width: 100%;
+
+
+      padding: 120px 20px;
+
+
       padding: 160px 20px;
+
       color: white;
+
       text-align: center;
+
+
+      background-image: url('assets/Guanyin_big.jpeg');
+
+
       background-image:
+
+
         linear-gradient(rgba(30,30,30,0.55), rgba(20,20,20,0.75)),
+
+
         url('assets/Guanyin.jpeg');
+
       background-size: cover;
+
       background-position: center;
+
+
+      background-repeat: no-repeat;
+
       text-shadow: 0 0 12px rgba(0,0,0,0.6);
+
     }
+
+
+
     header.hero h1 {
+
+
+      font-size: 48px;
+
+
       font-size: 52px;
+
       margin: 0;
+
+
       font-weight: normal;
+
       letter-spacing: 1px;
+
     }
+
+
+
+
+    header.hero p {
+
+
+      font-size: 22px;
+
+
+      margin-top: 12px;
+
+
     header.hero h2 {
+
+
       font-size: 24px;
+
+
       margin-top: 14px;
+
       font-style: italic;
+
+
       opacity: 0.9;
+
     }
+
+
+
+
+    .lang-switch {
+
+
+      margin: 30px 0;
+
+
+    }
+
+
+
+
+
+    .lang-switch .button {
+
+
+      border: 1px solid #000;
+
+
+      background: #fff;
+
+
+      padding: 6px 14px;
+
+
+      margin: 0 5px;
+
+
+      cursor: pointer;
+
+
+      font-size: 1em;
+
+
+      text-decoration: none;
+
+
+      color: #000;
+
+
+      transition: all 0.2s ease;
+
+
+    }
+
+
+
+
+
+    .lang-switch .button.active {
+
+
+      background: #000;
+
+
+      color: #fff;
+
+
+    }
+
+
+
+
+
+    /* === Sections === */
 
     section {
+
       max-width: 760px;
+
       margin: 0 auto;
+
       padding: 40px 20px;
+
+
+      text-align: left;
+
     }
+
+
+
+
+    .links a.button {
+
+
+      font-size: 1.05em;
+
+
+      text-decoration: none;
+
+
+      color: #000;
+
+
+      border: 1px solid #000;
+
+
+      padding: 8px 14px;
+
+
+      transition: all 0.3s ease;
+
+
+      display: inline-flex;
+
+
+      align-items: center;
+
+
+      gap: 6px;
+
 
     h2 {
+
+
       text-align: center;
+
+
       margin-bottom: 0.4em;
+
+
     }
+
+
+
+
 
     .links {
+
+
       text-align: center;
+
+
       margin-top: 20px;
-    }
-    a.button {
-      display: inline-block;
-      margin: 6px;
-      padding: 8px 14px;
-      color: black;
-      border: 1px solid black;
-      text-decoration: none;
-      transition: 0.25s;
-    }
-    a.button:hover {
-      background: black;
-      color: white;
+
+
     }
 
-    .footer {
-      text-align: center;
-      margin: 60px 0 40px;
-      font-size: 0.9em;
-      color: #666;
+
+
+
+
+    a.button {
+
+
+      display: inline-block;
+
+      margin: 6px;
+
+
+      padding: 8px 14px;
+
+
+      color: black;
+
+
+      border: 1px solid black;
+
+
+      text-decoration: none;
+
+
+      transition: 0.25s;
+
     }
+
+
+
+
+    .links a.button:hover {
+
+
+      background-color: #000;
+
+
+      color: #fff;
+
+
+    a.button:hover {
+
+
+      background: black;
+
+
+      color: white;
+
+    }
+
+
+
+    .footer {
+
+
+      margin: 4em 0 2em 0;
+
+
+      text-align: center;
+
+
+      margin: 60px 0 40px;
+
+      font-size: 0.9em;
+
+
+      color: #555;
+
+
+      color: #666;
+
+    }
+
+
+
+
   </style>
+
 </head>
+
+
 
 <body>
 
+
+
+
+<!-- ================= HERO MIT GUANYIN ================= -->
+
+
+<!-- === NAVIGATION === -->
+
+
 <nav class="topnav">
+
+
   <a href="Figuren_der_Ordnung_Heft1.pdf">Heft I</a> ·
+
+
   <a href="FdO_Heft2_Ghosts.pdf">Heft II – GHOSTS</a> ·
+
+
   <a href="heft3.html"><strong>Heft III – Softpower</strong></a>
+
+
 </nav>
 
+
+
+
+
+<!-- === HERO === -->
+
 <header class="hero">
+
+
+  <h1>SOFTPOWER</h1>
+
+
+  <p>Figuren der Ordnung · Heft III (2025)</p>
+
+
   <h1>Figuren der Ordnung</h1>
+
+
   <h2>Theorie · Zeichen · Systeme</h2>
+
 </header>
 
-<section>
-  <p><strong>Figuren der Ordnung</strong> erscheint in unregelmäßiger Folge und versammelt Essays, Portraits,
-     systemische Analysen, literarische Experimente und Archivmaterial. Die Herausgeberschaft operiert bewusst
-     anonym oder pseudonym — eine Phantomschrift, die Denkprozesse freilegt statt Autorpositionen.</p>
-</section>
 
-<section class="links">
-  <a class="button" href="Figuren_der_Ordnung_Heft1.pdf" target="_blank">📘 Heft I (PDF)</a>
-  <a class="button" href="FdO_Heft2_Ghosts.pdf" target="_blank">👻 Heft II – GHOSTS (PDF)</a>
-  <a class="button" href="heft3.html">📗 Heft III – Softpower (Preview)</a>
-</section>
 
-<div class="footer">
-  Kontakt: <a href="mailto:HHollJMiller@proton.me">HHollJMiller@proton.me</a><br>
-  <a href="impressum.html">Impressum / License</a>
+
+<!-- ================= SPRACHSCHALTER ================= -->
+
+
+<div class="lang-switch">
+
+
+  <a href="#de" id="btn-de" class="button">DE</a>
+
+
+  <a href="#en" id="btn-en" class="button">EN</a>
+
+
 </div>
 
+
+<!-- === Haupttext === -->
+
+
+<section>
+
+
+  <p><strong>Figuren der Ordnung</strong> erscheint in unregelmäßiger Folge und versammelt Essays, Portraits,
+
+
+     systemische Analysen, literarische Experimente und Archivmaterial. Die Herausgeberschaft operiert bewusst
+
+
+     anonym oder pseudonym — eine Phantomschrift, die Denkprozesse freilegt statt Autorpositionen.</p>
+
+
+</section>
+
+
+
+
+<!-- ================= DEUTSCH ================= -->
+
+
+<div id="lang-de">
+
+
+<!-- === Heft-Links === -->
+
+
+<section class="links">
+
+
+  <a class="button" href="Figuren_der_Ordnung_Heft1.pdf" target="_blank">📘 Heft I (PDF)</a>
+
+
+  <a class="button" href="FdO_Heft2_Ghosts.pdf" target="_blank">👻 Heft II – GHOSTS (PDF)</a>
+
+
+  <a class="button" href="heft3.html" target="_blank">📗 Heft III – Softpower (Preview)</a>
+
+
+</section>
+
+
+
+
+  <section>
+
+
+    <h1 style="text-align:center;">Figuren der Ordnung</h1>
+
+
+    <h2 style="text-align:center; font-style:italic; color:#555;">Eine Zeitschrift für Theorie, Zeichen, Systeme</h2>
+
+
+
+
+
+    <p><strong>Figuren der Ordnung</strong> erscheint in unregelmäßiger Folge, unter wechselnden Namen und Perspektiven.</p>
+
+
+    <p>Die Beiträge bewegen sich entlang von Ordnungsfiguren – theoretischen, ästhetischen, politischen. Sie suchen Gegenwärtigkeit jenseits der meinungsförmigen Rede.</p>
+
+
+  </section>
+
+
+
+
+
+  <!-- ================= PREVIEW HEFT III — SOFTPOWER ================= -->
+
+
+  <section>
+
+
+
+
+
+    <h2 style="text-align:center; margin-bottom:0.4em;">Vorschau · Heft III (2025)</h2>
+
+
+    <h3 style="text-align:center; font-style:italic; color:#444;">SOFTPOWER</h3>
+
+
+
+
+
+    <p>
+
+
+      Heft III untersucht den Zerfall eines Schlüsselbegriffs globaler Politik: <strong>Softpower</strong>.
+
+
+      Nicht als kulturelle Ressource, sondern als staatliches Verwaltungsprogramm, dessen Infrastruktur
+
+
+      – USAID, Fulbright, Voice of America – systematisch demontiert wurde.
+
+
+    </p>
+
+
+
+
+
+    <p>
+
+
+      In den Vordergrund tritt eine neue Form operativer Macht: Einfluss über
+
+
+      <strong>Zugangsbedingungen</strong>, <strong>Standards</strong>,
+
+
+      <strong>digitale Protokolle</strong> und <strong>Zeitpolitiken</strong>.
+
+
+    </p>
+
+
+
+
+
+    <h4>Thematische Linien</h4>
+
+
+    <ul>
+
+
+      <li><strong>Strategisches Warten</strong> – Zeitpolitik und indirekte Wirksamkeit</li>
+
+
+      <li><strong>Plattformimperien</strong> – digitale Infrastrukturen als geopolitische Akteure</li>
+
+
+      <li><strong>Signalpolitik</strong> – Machtausübung durch kontrollierte Sichtbarkeit</li>
+
+
+      <li><strong>Kopie & Variation</strong> – ästhetische Logiken operativer Verfahren</li>
+
+
+    </ul>
+
+
+
+
+
+    <h4>Bildstrecke</h4>
+
+
+    <p>
+
+
+      Begleitet von Werken von <strong>Alexandra Christou</strong>,
+
+
+      <strong>Lin Mei</strong> und <strong>Jian Zhou</strong>.
+
+
+    </p>
+
+
+
+
+
+  </section>
+
+
+<div class="footer">
+
+
+  Kontakt: <a href="mailto:HHollJMiller@proton.me">HHollJMiller@proton.me</a><br>
+
+
+  <a href="impressum.html">Impressum / License</a>
+
+
+</div>
+
+
+
+
+  <!-- ================= LINKS ================= -->
+
+
+  <section class="links" style="text-align:center;">
+
+
+    <a class="button" href="Figuren_der_Ordnung_Heft1.pdf" target="_blank">📖 Heft 1 (PDF)</a>
+
+
+    <a class="button" href="FdO_Heft2_Ghosts.pdf" target="_blank">👻 Heft 2 – GHOSTS (PDF)</a>
+
+
+    <a class="button" href="heft2.html">🌐 Heft 2 online</a>
+
+
+    <a class="button" href="heft3.html">📘 Heft 3 – Softpower (Preview)</a>
+
+
+  </section>
+
+
 </body>
+
+
 </html>
 
 
+
+
+</div>
+
+
+
+<!-- ================= ENGLISH ================= -->
+
+<div id="lang-en" style="display:none;">
+  
