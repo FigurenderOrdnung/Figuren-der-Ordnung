@@ -12,9 +12,7 @@
   <!-- Plausible Analytics -->
   <script async src="https://plausible.io/js/pa-fKsNcNRHB95MFrkHFWbTg.js"></script>
   <script>
-    window.plausible = window.plausible || function () { (plausible.q = plausible.q || []).push(arguments) },
-    plausible.init = plausible.init || function (i) { plausible.o = i || {} };
-    plausible.init();
+    window.plausible = window.plausible || function () { (plausible.q = plausible.q || []).push(arguments) };
   </script>
 
   <style>
@@ -27,7 +25,6 @@
       line-height: 1.6;
     }
 
-    /* TOP NAVIGATION */
     nav.topnav {
       text-align: center;
       padding: 18px 0;
@@ -46,7 +43,6 @@
       text-decoration: underline;
     }
 
-    /* HERO SECTION */
     header.hero {
       width: 100%;
       padding: 160px 20px;
@@ -55,9 +51,9 @@
       background-image:
         linear-gradient(rgba(30,30,30,0.55), rgba(20,20,20,0.75)),
         url('assets/Guanyin.jpg');
-     background-size: 80%;
-     background-repeat: no-repeat;
-     background-position: center;
+      background-size: 80%;
+      background-repeat: no-repeat;
+      background-position: center;
       text-shadow: 0 0 12px rgba(0,0,0,0.6);
     }
 
@@ -75,7 +71,6 @@
       opacity: 0.9;
     }
 
-    /* LANGUAGE SWITCH */
     .lang-switch {
       text-align: center;
       margin: 24px 0;
@@ -87,7 +82,6 @@
       padding: 6px 14px;
       margin: 0 5px;
       font-size: 1em;
-      text-decoration: none;
       color: #000;
       cursor: pointer;
       transition: all 0.2s ease;
@@ -98,7 +92,6 @@
       color: #fff;
     }
 
-    /* GENERAL SECTIONS */
     section {
       max-width: 760px;
       margin: 0 auto;
@@ -111,13 +104,12 @@
       margin-bottom: 0.4em;
     }
 
-    /* BUTTON LINKS */
     .links {
       text-align: center;
       margin-top: 20px;
     }
 
-    a.button {
+    a.button-link {
       display: inline-block;
       margin: 6px;
       padding: 8px 14px;
@@ -127,12 +119,11 @@
       transition: 0.25s;
     }
 
-    a.button:hover {
+    a.button-link:hover {
       background: black;
       color: white;
     }
 
-    /* FOOTER */
     .footer {
       text-align: center;
       margin: 60px 0 40px;
@@ -144,14 +135,12 @@
 
 <body>
 
-<!-- ================= NAVIGATION ================= -->
 <nav class="topnav">
   <a href="issue1.html">Heft I</a> ·
   <a href="issue2.html">Heft II – GHOSTS</a> ·
   <a href="issue3.html"><strong>Heft III – Softpower</strong></a>
 </nav>
 
-<!-- ================= HERO ================= -->
 <header class="hero">
   <h1>SOFTPOWER</h1>
   <p>Figuren der Ordnung · Heft III (2025)</p>
@@ -159,26 +148,23 @@
   <h2>Theorie · Zeichen · Systeme</h2>
 </header>
 
-<!-- ================= LANGUAGE SWITCH ================= -->
 <div class="lang-switch">
-  <a href="#" id="btn-de" class="button active">DE</a>
-  <a href="#" id="btn-en" class="button">EN</a>
+  <button id="btn-de" class="button active" type="button">DE</button>
+  <button id="btn-en" class="button" type="button">EN</button>
 </div>
 
-<!-- ================= HAUPTTEXT ================= -->
 <section id="content-de">
   <p><strong>Figuren der Ordnung</strong> erscheint in unregelmäßiger Folge und versammelt Essays, Portraits,
      systemische Analysen, literarische Experimente und Archivmaterial. Die Herausgeberschaft operiert bewusst
      anonym oder pseudonym — eine Phantomschrift, die Denkprozesse freilegt statt Autorpositionen.</p>
 </section>
 
-<section class="links">
-  <a class="button" href="issue1.html">📘 Heft I</a>
-  <a class="button" href="issue2.html">👻 Heft II – GHOSTS</a>
-  <a class="button" href="issue3.html">📗 Heft III – Softpower</a>
+<section id="links-de" class="links">
+  <a class="button-link" href="issue1.html">📘 Heft I</a>
+  <a class="button-link" href="issue2.html">👻 Heft II – GHOSTS</a>
+  <a class="button-link" href="issue3.html">📗 Heft III – Softpower</a>
 </section>
 
-<!-- ================= ENGLISH VERSION ================= -->
 <section id="content-en" style="display:none;">
   <p><strong>Figures of Order</strong> is published irregularly and assembles essays, portraits,
      systemic analysis, literary experiments and archival material. The editorial practice operates
@@ -186,35 +172,50 @@
 </section>
 
 <section id="links-en" class="links" style="display:none;">
-  <a class="button" href="issue1.html">📘 Issue I</a>
-  <a class="button" href="issue2.html">👻 Issue II – GHOSTS</a>
-  <a class="button" href="issue3.html">📗 Issue III – Softpower</a>
+  <a class="button-link" href="issue1.html">📘 Issue I</a>
+  <a class="button-link" href="issue2.html">👻 Issue II – GHOSTS</a>
+  <a class="button-link" href="issue3.html">📗 Issue III – Softpower</a>
 </section>
 
-<!-- ================= FOOTER ================= -->
 <div class="footer">
   Kontakt: <a href="mailto:HHollJMiller@proton.me">HHollJMiller@proton.me</a><br>
   <a href="impressum.html">Impressum / License</a>
 </div>
 
-<!-- ================= LANGUAGE SWITCH SCRIPT ================= -->
 <script>
-document.getElementById("btn-de").onclick = function () {
-  document.getElementById("content-de").style.display = "block";
-  document.getElementById("content-en").style.display = "none";
-  document.getElementById("links-en").style.display = "none";
-  document.getElementById("btn-de").classList.add("active");
-  document.getElementById("btn-en").classList.remove("active");
-};
+  const btnDe = document.getElementById("btn-de");
+  const btnEn = document.getElementById("btn-en");
 
-document.getElementById("btn-en").onclick = function () {
-  document.getElementById("content-de").style.display = "none";
-  document.getElementById("content-en").style.display = "block";
-  document.getElementById("links-en").style.display = "block";
-  document.getElementById("btn-en").classList.add("active");
-  document.getElementById("btn-de").classList.remove("active");
-};
+  const contentDe = document.getElementById("content-de");
+  const contentEn = document.getElementById("content-en");
+  const linksDe = document.getElementById("links-de");
+  const linksEn = document.getElementById("links-en");
+
+  btnDe.onclick = () => {
+    contentDe.style.display = "block";
+    linksDe.style.display = "block";
+    contentEn.style.display = "none";
+    linksEn.style.display = "none";
+
+    btnDe.classList.add("active");
+    btnEn.classList.remove("active");
+
+    document.documentElement.lang = "de";
+  };
+
+  btnEn.onclick = () => {
+    contentDe.style.display = "none";
+    linksDe.style.display = "none";
+    contentEn.style.display = "block";
+    linksEn.style.display = "block";
+
+    btnEn.classList.add("active");
+    btnDe.classList.remove("active");
+
+    document.documentElement.lang = "en";
+  };
 </script>
 
 </body>
 </html>
+
