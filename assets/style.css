@@ -29,8 +29,7 @@ nav.topnav a:hover {
 /* HERO SECTION */
 header.hero {
   width: 100%;
-  min-height: 70vh;          /* kontrollierte Höhe */
-  padding: 120px 20px;       /* deutlich ruhiger */
+  padding: 140px 20px 120px;
   text-align: center;
   color: white;
 
@@ -38,13 +37,9 @@ header.hero {
     linear-gradient(rgba(30,30,30,0.55), rgba(20,20,20,0.75)),
     url('Guanyin.jpg');
 
-  background-size: cover;    /* DAS ist entscheidend */
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 
   text-shadow: 0 0 12px rgba(0,0,0,0.6);
 }
