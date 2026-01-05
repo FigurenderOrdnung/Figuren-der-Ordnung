@@ -54,39 +54,6 @@
   <a href="impressum.html">Impressum / License</a>
 </div>
 
-<script>
-  const btnDe = document.getElementById("btn-de");
-  const btnEn = document.getElementById("btn-en");
-
-  const contentDe = document.getElementById("content-de");
-  const contentEn = document.getElementById("content-en");
-  const linksDe = document.getElementById("links-de");
-  const linksEn = document.getElementById("links-en");
-
-  btnDe.onclick = () => {
-    contentDe.style.display = "block";
-    linksDe.style.display = "block";
-    contentEn.style.display = "none";
-    linksEn.style.display = "none";
-
-    btnDe.classList.add("active");
-    btnEn.classList.remove("active");
-
-    document.documentElement.lang = "de";
-  };
-
-  btnEn.onclick = () => {
-    contentDe.style.display = "none";
-    linksDe.style.display = "none";
-    contentEn.style.display = "block";
-    linksEn.style.display = "block";
-
-    btnEn.classList.add("active");
-    btnDe.classList.remove("active");
-
-    document.documentElement.lang = "en";
-  };
-</script>
 
 </body>
 </html>
