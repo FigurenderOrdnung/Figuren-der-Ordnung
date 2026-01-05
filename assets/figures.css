@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  font-family: serif;
+  color: #111;
+  background: #fff;
+}
+
+.site-nav {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #eee;
+}
+
+.issue-page {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem 6rem;
+}
+
+.issue-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.issue-header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.issue-header h2 {
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+
+.issue-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 3rem;
+}
+
+.issue-quote {
+  font-style: italic;
+  text-align: center;
+  margin: 4rem 0 3rem;
+  color: #444;
+}
+
+.issue-footer {
+  margin-top: 5rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
