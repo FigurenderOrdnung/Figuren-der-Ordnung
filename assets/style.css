@@ -29,7 +29,7 @@ nav.topnav a:hover {
 /* HERO SECTION */
 header.hero {
   width: 100%;
-  padding: 140px 20px 120px;
+  padding: 100px 20px;
   text-align: center;
   color: white;
 
@@ -98,5 +98,34 @@ a.button-link:hover {
   margin: 60px 0 40px;
   font-size: 0.9em;
   color: #666;
+}
+/* LANGUAGE SWITCH */
+.lang-switch {
+  text-align: center;
+  margin: 32px 0;
+}
+
+.lang-switch .button {
+  display: inline-block;
+  border: 1px solid #000;
+  background: #fff;
+  padding: 6px 14px;
+  margin: 0 5px;
+  font-size: 1em;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+.lang-switch .button.active {
+  background: #000;
+  color: #fff;
+}
+/* PAGE WRAPPER FOR ISSUE / HEFT */
+main.page {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
 }
 
