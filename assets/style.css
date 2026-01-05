@@ -128,4 +128,14 @@ main.page {
   padding: 60px 20px;
   text-align: center;
 }
+/* COVER IMAGES (Heft / Issue) */
+img.cover {
+  width: 280px;
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 30px auto;
+  border: 1px solid #ddd;
+}
+
 
