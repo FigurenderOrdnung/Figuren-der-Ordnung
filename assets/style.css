@@ -70,7 +70,7 @@ header.hero .tagline {
 }
 
 /* CONTENT */
-section {
+main.page section {
   max-width: 760px;
   margin: 0 auto;
   padding: 40px 20px;
