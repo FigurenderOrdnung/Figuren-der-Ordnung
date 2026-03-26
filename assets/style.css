@@ -33,41 +33,40 @@ header.hero {
   text-align: center;
   color: #f8f5ef;
   background-image:
-    linear-gradient(rgba(120, 110, 92, 0.28), rgba(70, 62, 52, 0.42)),
+    linear-gradient(rgba(110, 102, 88, 0.38), rgba(72, 64, 54, 0.48)),
     url('Guanyin.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  text-shadow: 0 1px 10px rgba(0,0,0,0.28);
+  text-shadow: 0 1px 10px rgba(0,0,0,0.30);
 }
-
 header.hero h1 {
-  font-size: 3.2rem;
+  font-size: 2.8rem;
   line-height: 1.08;
-  margin: 0 0 18px;
+  margin: 0 0 16px;
   font-weight: 700;
 }
 
 header.hero h2,
 header.hero .issue-title {
-  font-size: 2.4rem;
+  font-size: 2rem;
   line-height: 1.12;
-  margin: 0 0 18px;
+  margin: 0 0 16px;
   font-weight: 600;
 }
 
 header.hero p,
 header.hero .subtitle {
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   line-height: 1.5;
-  margin: 0.4rem 0;
+  margin: 0.35rem 0;
 }
 
 header.hero .tagline {
-  font-size: 1.05rem;
+  font-size: 0.98rem;
   font-style: italic;
   letter-spacing: 0.01em;
-  margin-top: 18px;
+  margin-top: 14px;
 }
 
 /* CONTENT */
