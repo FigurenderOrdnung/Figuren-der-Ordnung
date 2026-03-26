@@ -1,6 +1,6 @@
 body {
   font-family: Georgia, serif;
-  background-color: #ffffff;
+  background-color: #f7f4ee;
   color: #222;
   margin: 0;
   padding: 0;
@@ -8,54 +8,66 @@ body {
 }
 
 /* TOP NAVIGATION */
-nav.topnav {
+.topnav {
   text-align: center;
-  padding: 18px 0;
-  font-size: 1.05em;
-  border-bottom: 1px solid #ccc;
-  letter-spacing: 0.4px;
+  padding: 28px 20px;
+  background: #f4f0e8;
+  font-size: 0.98rem;
+  line-height: 1.4;
 }
 
-nav.topnav a {
-  color: black;
+.topnav a {
+  color: #1f1f1f;
   text-decoration: none;
-  padding: 0 14px;
+  margin: 0 10px;
 }
 
-nav.topnav a:hover {
+.topnav a:hover {
   text-decoration: underline;
 }
 
-/* HERO SECTION */
+/* HERO */
 header.hero {
   width: 100%;
-  padding: 100px 20px;
+  padding: 72px 20px 84px;
   text-align: center;
-  color: white;
-
+  color: #f8f5ef;
   background-image:
-    linear-gradient(rgba(30,30,30,0.55), rgba(20,20,20,0.75)),
+    linear-gradient(rgba(120, 110, 92, 0.28), rgba(70, 62, 52, 0.42)),
     url('Guanyin.jpg');
-
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
-  text-shadow: 0 0 12px rgba(0,0,0,0.6);
+  text-shadow: 0 1px 10px rgba(0,0,0,0.28);
 }
 
 header.hero h1 {
-  font-size: 44px;
-  margin: 0;
-  font-weight: normal;
-  letter-spacing: 1px;
+  font-size: 3.2rem;
+  line-height: 1.08;
+  margin: 0 0 18px;
+  font-weight: 700;
 }
 
-header.hero h2 {
-  font-size: 24px;
-  margin-top: 14px;
+header.hero h2,
+header.hero .issue-title {
+  font-size: 2.4rem;
+  line-height: 1.12;
+  margin: 0 0 18px;
+  font-weight: 600;
+}
+
+header.hero p,
+header.hero .subtitle {
+  font-size: 1.15rem;
+  line-height: 1.5;
+  margin: 0.4rem 0;
+}
+
+header.hero .tagline {
+  font-size: 1.05rem;
   font-style: italic;
-  opacity: 0.9;
+  letter-spacing: 0.01em;
+  margin-top: 18px;
 }
 
 /* CONTENT */
@@ -99,6 +111,7 @@ a.button-link:hover {
   font-size: 0.9em;
   color: #666;
 }
+
 /* LANGUAGE SWITCH */
 .lang-switch {
   text-align: center;
@@ -121,6 +134,7 @@ a.button-link:hover {
   background: #000;
   color: #fff;
 }
+
 /* PAGE WRAPPER FOR ISSUE / HEFT */
 main.page {
   max-width: 760px;
@@ -128,6 +142,7 @@ main.page {
   padding: 60px 20px;
   text-align: center;
 }
+
 /* COVER IMAGES (Heft / Issue) */
 img.cover {
   width: 280px;
@@ -138,4 +153,24 @@ img.cover {
   border: 1px solid #ddd;
 }
 
+/* MOBILE */
+@media (max-width: 768px) {
+  header.hero {
+    padding: 56px 18px 64px;
+  }
 
+  header.hero h1 {
+    font-size: 2.2rem;
+  }
+
+  header.hero h2,
+  header.hero .issue-title {
+    font-size: 1.8rem;
+  }
+
+  header.hero p,
+  header.hero .subtitle,
+  header.hero .tagline {
+    font-size: 1rem;
+  }
+}
