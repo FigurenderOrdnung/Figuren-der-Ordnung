@@ -247,3 +247,29 @@ img.cover {
     font-size: 1rem;
   }
 }
+/* bestehende CSS-Regeln ... */
+
+.announcement {
+  max-width: 760px;
+  margin: 2.5rem auto;
+  padding: 1.5rem;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+  line-height: 1.7;
+}
+
+.announcement h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  letter-spacing: 0.03em;
+}
+
+.announcement p {
+  margin-bottom: 1rem;
+}
+
+.announcement .button-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+}
