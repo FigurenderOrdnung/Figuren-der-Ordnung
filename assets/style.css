@@ -7,7 +7,7 @@ body {
   line-height: 1.6;
 }
 
-/* TOP NAVIGATION */
+/* Navigation */
 .topnav {
   text-align: center;
   padding: 28px 20px;
@@ -21,38 +21,12 @@ body {
   text-decoration: none;
   margin: 0 10px;
 }
-#content-de,
-#content-en,
-.announcement {
-  max-width: 760px;
-  margin: 2rem auto;
-  padding: 0 1rem;
-  box-sizing: border-box;
-}
-
-#content-de p,
-#content-en p,
-.announcement p {
-  line-height: 1.7;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-.hero {
-  max-width: 100%;
-  overflow: hidden;
-  box-sizing: border-box;
-}
 
 .topnav a:hover {
   text-decoration: underline;
 }
 
-/* HERO */
+/* Hero */
 header.hero {
   width: 100%;
   padding: 72px 20px 84px;
@@ -64,8 +38,11 @@ header.hero {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  text-shadow: 0 1px 10px rgba(0,0,0,0.30);
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.30);
+  overflow: hidden;
+  box-sizing: border-box;
 }
+
 header.hero h1 {
   font-size: 2.8rem;
   line-height: 1.08;
@@ -95,20 +72,55 @@ header.hero .tagline {
   margin-top: 14px;
 }
 
-/* CONTENT */
-main.page section {
+/* Allgemeine Breiten */
+#content-de,
+#content-en,
+.announcement,
+main.page,
+main.about-page {
   max-width: 760px;
   margin: 0 auto;
-  padding: 40px 20px;
-  text-align: left;
+  box-sizing: border-box;
 }
 
-h2 {
-  text-align: center;
-  margin-bottom: 0.4em;
+#content-de,
+#content-en {
+  padding: 0 1rem;
+  margin-top: 2rem;
 }
 
-/* BUTTON LINKS */
+#content-de p,
+#content-en p,
+.announcement p,
+main.about-page p {
+  line-height: 1.7;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Heft-IV-Ankündigung */
+.announcement {
+  margin: 2.5rem auto;
+  padding: 1.5rem 1rem;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+}
+
+.announcement h3 {
+  margin: 0 0 1rem;
+  font-size: 1.4rem;
+  letter-spacing: 0.03em;
+}
+
+.announcement .button-link {
+  margin-top: 0.5rem;
+}
+
+/* Buttons / Heftlinks */
 .links {
   text-align: center;
   margin-top: 20px;
@@ -118,20 +130,60 @@ a.button-link {
   display: inline-block;
   margin: 6px;
   padding: 8px 14px;
-  color: black;
-  border: 1px solid black;
+  color: #000;
+  border: 1px solid #000;
   text-decoration: none;
   transition: 0.25s;
 }
 
 a.button-link:hover {
-  background: black;
-  color: white;
+  background: #000;
+  color: #fff;
 }
-/* ABOUT PAGE */
+
+/* Sprachumschaltung */
+.lang-switch {
+  text-align: center;
+  margin: 32px 0;
+}
+
+.lang-switch .button {
+  display: inline-block;
+  border: 1px solid #000;
+  background: #fff;
+  padding: 6px 14px;
+  margin: 0 5px;
+  font-size: 1em;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+.lang-switch .button.active {
+  background: #000;
+  color: #fff;
+}
+
+/* Heftseiten */
+main.page {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+main.page section {
+  padding: 40px 20px;
+  text-align: left;
+}
+
+img.cover {
+  width: 280px;
+  max-width: 80%;
+  margin: 30px auto;
+  border: 1px solid #ddd;
+}
+
+/* Über-Seite */
 main.about-page {
-  max-width: 860px;
-  margin: 0 auto;
   padding: 72px 32px 90px;
 }
 
@@ -149,12 +201,6 @@ main.about-page h2 {
   margin: 54px 0 20px;
   text-align: left;
   font-weight: 700;
-}
-
-main.about-page p {
-  font-size: 1.16rem;
-  line-height: 1.82;
-  margin: 0 0 1.25em;
 }
 
 main.about-page .lead {
@@ -182,28 +228,7 @@ main.about-page a {
   text-underline-offset: 2px;
 }
 
-@media (max-width: 768px) {
-  main.about-page {
-    padding: 52px 22px 70px;
-  }
-
-  main.about-page h1 {
-    font-size: 2rem;
-    margin-bottom: 28px;
-  }
-
-  main.about-page h2 {
-    font-size: 1.35rem;
-    margin-top: 42px;
-  }
-
-  main.about-page p,
-  main.about-page .lead {
-    font-size: 1.04rem;
-    line-height: 1.72;
-  }
-}
-/* FOOTER */
+/* Footer */
 .footer {
   text-align: center;
   margin: 60px 0 40px;
@@ -211,48 +236,7 @@ main.about-page a {
   color: #666;
 }
 
-/* LANGUAGE SWITCH */
-.lang-switch {
-  text-align: center;
-  margin: 32px 0;
-}
-
-.lang-switch .button {
-  display: inline-block;
-  border: 1px solid #000;
-  background: #fff;
-  padding: 6px 14px;
-  margin: 0 5px;
-  font-size: 1em;
-  text-decoration: none;
-  color: #000;
-  cursor: pointer;
-}
-
-.lang-switch .button.active {
-  background: #000;
-  color: #fff;
-}
-
-/* PAGE WRAPPER FOR ISSUE / HEFT */
-main.page {
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 60px 20px;
-  text-align: center;
-}
-
-/* COVER IMAGES (Heft / Issue) */
-img.cover {
-  width: 280px;
-  max-width: 80%;
-  height: auto;
-  display: block;
-  margin: 30px auto;
-  border: 1px solid #ddd;
-}
-
-/* MOBILE */
+/* Mobile */
 @media (max-width: 768px) {
   header.hero {
     padding: 56px 18px 64px;
@@ -272,30 +256,24 @@ img.cover {
   header.hero .tagline {
     font-size: 1rem;
   }
-}
-/* bestehende CSS-Regeln ... */
 
-.announcement {
-  max-width: 760px;
-  margin: 2.5rem auto;
-  padding: 1.5rem;
-  border-top: 1px solid #999;
-  border-bottom: 1px solid #999;
-  line-height: 1.7;
-}
+  main.about-page {
+    padding: 52px 22px 70px;
+  }
 
-.announcement h3 {
-  margin-top: 0;
-  margin-bottom: 1rem;
-  font-size: 1.4rem;
-  letter-spacing: 0.03em;
-}
+  main.about-page h1 {
+    font-size: 2rem;
+    margin-bottom: 28px;
+  }
 
-.announcement p {
-  margin-bottom: 1rem;
-}
+  main.about-page h2 {
+    font-size: 1.35rem;
+    margin-top: 42px;
+  }
 
-.announcement .button-link {
-  display: inline-block;
-  margin-top: 0.5rem;
+  main.about-page p,
+  main.about-page .lead {
+    font-size: 1.04rem;
+    line-height: 1.72;
+  }
 }
