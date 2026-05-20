@@ -10,20 +10,24 @@ body {
 /* Navigation */
 .topnav {
   text-align: center;
-  padding: 28px 20px;
+  padding: 24px 20px;
   background: #f4f0e8;
-  font-size: 0.98rem;
+  font-size: 0.95rem;
   line-height: 1.4;
+  letter-spacing: 0.01em;
 }
 
 .topnav a {
-  color: #1f1f1f;
+  color: #222;
   text-decoration: none;
   margin: 0 10px;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease, color 0.2s ease;
 }
 
 .topnav a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  border-bottom: 1px solid #222;
 }
 
 /* Hero */
@@ -100,20 +104,23 @@ img {
 
 /* Heft-IV-Ankündigung */
 .announcement {
-  margin: 2.5rem auto;
-  padding: 1.5rem 1rem;
-  border-top: 1px solid #999;
-  border-bottom: 1px solid #999;
+  max-width: 760px;
+  margin: 2.8rem auto;
+  padding: 1.6rem 1rem;
+  border-top: 1px solid #b7b3ab;
+  border-bottom: 1px solid #b7b3ab;
 }
 
 .announcement h3 {
   margin: 0 0 1rem;
-  font-size: 1.4rem;
-  letter-spacing: 0.03em;
+  font-size: 1.35rem;
+  letter-spacing: 0.02em;
+  text-align: center;
 }
 
-.announcement .button-link {
-  margin-top: 0.5rem;
+.announcement p {
+  margin-bottom: 1rem;
+  line-height: 1.75;
 }
 
 /* Buttons / Heftlinks */
@@ -239,24 +246,24 @@ main.about-page a {
 /* Mobile */
 @media (max-width: 768px) {
   header.hero {
-    padding: 56px 18px 64px;
+    padding: 62px 18px 68px;
   }
 
   header.hero h1 {
-    font-size: 2.2rem;
+    font-size: 2.15rem;
   }
 
   header.hero h2,
   header.hero .issue-title {
-    font-size: 1.8rem;
+    font-size: 1.55rem;
   }
 
   header.hero p,
   header.hero .subtitle,
   header.hero .tagline {
-    font-size: 1rem;
+    font-size: 0.98rem;
   }
-
+}
   main.about-page {
     padding: 52px 22px 70px;
   }
